@@ -1,0 +1,17 @@
+UI POLICY DETAILS
+
+Short description: Make Description Mandatory
+Table: Incident [incident]
+Condition: Priority is 1 - Critical
+Active: Yes
+Reverse if false: Yes
+
+UI Policy Action:
+Field name: Description
+Mandatory: True
+Visible: True
+Disabled: False
+
+Purpose:
+When the Incident Priority is Critical, the Description field is mandatory.
+When the condition becomes false, the reverse setting removes the mandatory state.

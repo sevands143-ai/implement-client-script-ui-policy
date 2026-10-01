@@ -1,0 +1,12 @@
+UI POLICY ACTION
+
+Field: Description
+Mandatory: True
+Visible: True
+Disabled: False
+
+Condition:
+Priority is 1 - Critical
+
+Reverse if false:
+Enabled

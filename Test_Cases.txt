@@ -1,0 +1,37 @@
+TEST CASES
+
+TC01 - Critical Priority
+Steps:
+1. Open an Incident form.
+2. Set Priority to 1 - Critical.
+3. Check Description.
+
+Expected Result:
+Description becomes mandatory.
+
+TC02 - Non-Critical Priority
+Steps:
+1. Open an Incident form.
+2. Set Priority to a value other than Critical.
+3. Check Description.
+
+Expected Result:
+Description is not mandatory.
+
+TC03 - Save Critical Incident Without Description
+Steps:
+1. Set Priority to Critical.
+2. Leave Description empty.
+3. Try to save.
+
+Expected Result:
+The form should require Description before saving.
+
+TC04 - Enter Description
+Steps:
+1. Set Priority to Critical.
+2. Enter a description.
+3. Save.
+
+Expected Result:
+The Incident should save successfully, subject to other mandatory fields and instance rules.

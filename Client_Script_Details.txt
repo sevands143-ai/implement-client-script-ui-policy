@@ -1,0 +1,12 @@
+CLIENT SCRIPT DETAILS
+
+Name: Make Description Mandatory
+Table: Incident [incident]
+UI Type: All
+Type: onChange
+Field name: Priority
+Active: Yes
+
+Purpose:
+When Priority is changed to Critical (value 1), the Description field becomes mandatory.
+For other priorities, Description is not mandatory.

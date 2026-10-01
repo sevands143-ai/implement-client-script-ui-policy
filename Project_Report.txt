@@ -1,0 +1,38 @@
+SERVICENOW PROJECT REPORT
+
+TITLE:
+Implementation of Client Script and UI Policy
+
+1. AIM
+To implement a Client Script and UI Policy on the Incident table in ServiceNow.
+
+2. OBJECTIVE
+To make the Description field mandatory whenever the Incident Priority is Critical.
+
+3. CLIENT SCRIPT
+A Client Script is a JavaScript executed on the client side of a ServiceNow form.
+This project uses an onChange Client Script on the Priority field.
+
+4. UI POLICY
+A UI Policy controls form-field behavior such as mandatory, visible, and read-only states based on conditions.
+
+5. IMPLEMENTATION
+Client Script:
+- Table: Incident
+- Type: onChange
+- Field: Priority
+- Condition: Priority value is 1
+- Action: Make Description mandatory.
+
+UI Policy:
+- Table: Incident
+- Condition: Priority is 1 - Critical
+- UI Policy Action: Description mandatory = True
+- Reverse if false = Enabled.
+
+6. TESTING
+The project is tested using Critical and non-Critical priority values.
+The expected result is that Description is mandatory only for Critical priority.
+
+7. CONCLUSION
+The Client Script and UI Policy successfully demonstrate dynamic form behavior in ServiceNow.
